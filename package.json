@@ -5,12 +5,13 @@
   "typings": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "start": "tsc --watch"
+    "start": "tsc --watch",
+    "build": "rm -rf dist/ && microbundle --no-compress --format cjs"
   },
   "devDependencies": {
     "typed-react-form": "^1.2.13",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "microbundle": "^0.13.0"
   },
   "peerDependencies": {
     "typed-react-form": "^1.2.13"
